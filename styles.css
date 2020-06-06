@@ -674,8 +674,9 @@ footer .fab:hover {
 	}
 
 	.nav-links {
-		right: -200px;
+		/* right: -200px; */
 		transition: all .3s;
+		display: none;
 	}
 
 	.nav-link {
