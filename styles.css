@@ -446,6 +446,99 @@ footer .fab:hover {
 	cursor: pointer;
 }
 
+@media (max-width: 1170px) {
+	header {
+		justify-content: center;
+	}
+
+	.logo {
+		min-width: 200px;
+		font-size: 22px;
+	}
+
+	ul {
+		background-color: rgb(255, 255, 255);
+	}
+
+	.open-hamburger,
+	.nav-links {
+		text-align: left;
+		position: absolute;
+		top: 78px;
+	}
+
+	.open-hamburger {
+		right: 0;
+		width: 200px;
+		opacity: 1;
+		transition: all .3s;
+	}
+
+	.nav-links {
+		opacity: 0;
+		right: 0;
+		width: 0;
+		transition: all .2s ease;
+		/* display: none; */
+	}
+
+	.nav-link {
+		display: block;
+		margin: 30px;
+	}
+
+	.hamburger {
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		margin-left: 1em;
+		cursor: pointer;
+		right: 50px;
+		transform: translateX(100%);
+	}
+
+	.line {
+		display: inline-block;
+	}
+
+	.line-1,
+	.line-2,
+	.line-3 {
+		position: absolute;
+		width: 20px;
+		height: 2px;
+		background-color: black;
+		left: 0;
+		transition: .2s ease;
+	}
+
+	.line-1 {
+		top: 2px;
+	}
+
+	.rotate-45 {
+		transform: rotate(45deg);
+		top: 12px;
+	}
+
+	.line-2 {
+		top: 10px;
+	}
+
+	.display-none {
+		display: none;
+	}
+
+	.line-3 {
+		top: 18px;
+	}
+
+	.rotate-minus-45 {
+		transform: rotate(-45deg);
+		top: 12px;
+	}
+}
+
 @media (max-width: 1040px) {
 
 	.inleiding-content {
@@ -540,6 +633,9 @@ footer .fab:hover {
 }
 
 @media (max-width: 860px) {
+	header {
+		justify-content: flex-start;
+	}
 
 	.inleiding-content,
 	.werkwijze {
@@ -638,6 +734,13 @@ footer .fab:hover {
 }
 
 @media (max-width: 550px) {
+	header {
+		padding: 1.5em 1em;
+	}
+
+	.logo {
+		font-size: 20px;
+	}
 
 	.inleiding-content {
 		padding: 2em 1em;
@@ -698,79 +801,5 @@ footer .fab:hover {
 @media (max-width: 400px) {
 	.pakket-card-content-container {
 		height: 350px;
-	}
-}
-
-@media (max-width: 1170px) {
-	header {
-		justify-content: center;
-	}
-
-	.logo {
-		min-width: 200px;
-		font-size: 22px;
-	}
-
-	ul {
-		background-color: rgb(255, 255, 255);
-	}
-
-	.nav-links-hamburger,
-	.nav-links {
-		text-align: left;
-		position: absolute;
-		top: 78px;
-	}
-
-	.nav-links-hamburger {
-		right: 0;
-		transition: all .3s;
-	}
-
-	.nav-links {
-		/* right: -200px; */
-		transition: all .3s;
-		display: none;
-	}
-
-	.nav-link {
-		display: block;
-		margin: 30px;
-	}
-
-	.hamburger {
-		position: absolute;
-		height: 20px;
-		width: 20px;
-		margin-left: 1em;
-		cursor: pointer;
-		right: 140px;
-		transform: translateX(100%);
-	}
-
-	.line {
-		display: inline-block;
-	}
-
-	.line-1,
-	.line-2,
-	.line-3 {
-		position: absolute;
-		width: 20px;
-		height: 2px;
-		background-color: black;
-		left: 0;
-	}
-
-	.line-1 {
-		top: 2px;
-	}
-
-	.line-2 {
-		top: 10px;
-	}
-
-	.line-3 {
-		top: 18px;
 	}
 }
