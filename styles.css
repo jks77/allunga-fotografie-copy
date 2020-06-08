@@ -640,16 +640,24 @@ footer .fab:hover {
 @media (max-width: 550px) {
 
 	.inleiding-content {
-		padding: 1em;
+		padding: 2em 1em;
 	}
 
 	.werkwijze {
-		margin: 0 0 4em;
+		margin: 0 0 6em;
 		padding: 0;
 	}
 
 	.werkwijze-inleiding {
-		padding: 1em;
+		padding: 2em 1em;
+	}
+
+	.card {
+		margin-bottom: 2em;
+	}
+
+	.card:nth-of-type(6) {
+		margin-bottom: 0;
 	}
 
 	.button-cta-stap {
@@ -661,15 +669,12 @@ footer .fab:hover {
 	}
 
 	.testimonials {
-		padding: 3em 1em
+		padding: 3em 1em;
+		margin-bottom: 6em;
 	}
 
 	.testimonials h3 {
 		font-size: 22px;
-	}
-
-	.testimonials {
-		margin-bottom: 4em;
 	}
 
 	.portfolio-gallery {
