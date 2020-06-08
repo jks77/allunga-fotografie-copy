@@ -458,6 +458,7 @@ footer .fab:hover {
 
 	ul {
 		background-color: rgb(255, 255, 255);
+
 	}
 
 	.open-hamburger,
@@ -494,7 +495,6 @@ footer .fab:hover {
 		margin-left: 1em;
 		cursor: pointer;
 		right: 50px;
-		transform: translateX(100%);
 	}
 
 	.line {
@@ -631,6 +631,18 @@ footer .fab:hover {
 		column-count: 2;
 	}
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 860px) and (orientation : landscape) {
+	ul {
+		height: 300px;
+		max-height: 300px;
+		width: 100%;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch; // mobile safari
+	}
+
+}
+
 
 @media (max-width: 860px) {
 	header {
