@@ -152,6 +152,7 @@ header {
 	padding: 4em 0;
 	max-width: 900px;
 	margin: 0 auto;
+	/* text-align: justify; */
 }
 
 /* purple box ter decoratie  */
@@ -456,31 +457,36 @@ footer .fab:hover {
 		font-size: 22px;
 	}
 
-	ul {
-		background-color: rgb(255, 255, 255);
-
-	}
-
-	.open-hamburger,
 	.nav-links {
+		background-color: rgb(255, 255, 255);
 		text-align: left;
 		position: absolute;
 		top: 78px;
-	}
-
-	.open-hamburger {
+		transition: all .5s ease;
+		width: 0;
 		right: 0;
-		width: 200px;
-		opacity: 1;
-		transition: all .3s;
+		display: none;
 	}
 
+	/* .open-hamburger,
 	.nav-links {
+		
+	} */
+
+	/* .nav-links {
 		opacity: 0;
 		right: 0;
-		width: 0;
-		transition: all .2s ease;
-		/* display: none; */
+		width: 0; */
+
+	/* display: none; */
+	/* } */
+
+	.open-hamburger {
+		/* right: 0; */
+		width: 200px;
+		opacity: 1;
+		display: block;
+		transition: all .5s ease;
 	}
 
 	.nav-link {
@@ -540,7 +546,6 @@ footer .fab:hover {
 }
 
 @media (max-width: 1040px) {
-
 	.inleiding-content {
 		padding: 3em 0;
 		max-width: 750px;
@@ -632,7 +637,7 @@ footer .fab:hover {
 	}
 }
 
-@media only screen and (min-width : 320px) and (max-width : 860px) and (orientation : landscape) {
+@media only screen and (min-width: 320px) and (max-width: 860px) and (orientation: landscape) {
 	ul {
 		height: 300px;
 		max-height: 300px;
@@ -640,9 +645,7 @@ footer .fab:hover {
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch; // mobile safari
 	}
-
 }
-
 
 @media (max-width: 860px) {
 	header {
@@ -675,12 +678,7 @@ footer .fab:hover {
 
 	.werkwijze-card-container {
 		grid-template-columns: minmax(0, 1fr) minmax(250px, 400px) minmax(0, 1fr);
-		grid-template-areas: '. one .'
-			'. two .'
-			'. three .'
-			'. four .'
-			'. five .'
-			'. six .';
+		grid-template-areas: '. one .' '. two .' '. three .' '. four .' '. five .' '. six .';
 	}
 
 	.card {
@@ -699,8 +697,7 @@ footer .fab:hover {
 
 	.pakketten-container {
 		grid-template-columns: minmax(0, 1fr) minmax(250px, 400px) minmax(0, 1fr);
-		grid-template-areas: '. pakket-one .'
-			'. pakket-two .''. pakket-three .';
+		grid-template-areas: '. pakket-one .' '. pakket-two .''. pakket-three .';
 	}
 
 	.pakket-card-content-container {
